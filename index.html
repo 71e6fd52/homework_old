@@ -1,14 +1,9 @@
 <!DOCTYPE HTML>
-<html>
+<frameset> 
+<noframes> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="Keywords" content="blog"/>
-    <meta name="Description" content="blog"/>
     <title>每日最新作业</title>
-    <link rel="shortcut icon" href="/static/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="/main.css" />
-    <meta http-equiv="refresh" content="0;url=https://745275633.github.io/homework-2016_09_19.html">
+    <meta http-equiv="refresh" content="0;url=http://www.datsd.ga/homework-2016_09_20.html">
 </head>
 <body>
 <div class="main">
@@ -21,16 +16,8 @@
             <a href="/" id="title"></a>
 			</h1>
 	</div>
-<div id="md" style="display: none;">
-<!-- markdown -->
-#转跳中
-
-<!-- markdown end -->
-</div>
 <div class="entry" id="main">
-<!-- content -->
 <h1 id="">转跳中</h1>
-<!-- content end -->
 </div>
 <br>
 <br>
@@ -38,47 +25,8 @@
 		<p>© 2016 by 745275633, Designed by isnowfy</p>
 	</div>
 </div>
-<script src="main.js"></script>
-<script>
-$(document).ready(function() {
-    $.ajax({
-        url: "main.json",
-        type: "GET",
-        dataType: "json",
-        success: function(data) {
-            $("#title").html(data.name);
-            var pages = [];
-            //path
-            var path = "new_homework.html";
-            //path end
-            var now = 0;
-            for (var i = 0; i < data.pages.length; ++i)
-                if (path == data.pages[i].path) {
-                    now = i;
-                    pages.push({"select": true, "path": data.pages[i].path, "title": data.pages[i].title});
-                }
-                else {
-                    pages.push({"select": false, "path": data.pages[i].path, "title": data.pages[i].title});
-                }
-            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
-            var pagesHtml = pagesTemplate.render({"pages": pages});
-            $("#pages").append(pagesHtml);
-            var post = data.pages[now];
-            var tmp = post.tags.split(" ");
-            var tags = [];
-            for (var i = 0; i < tmp.length; ++i)
-                if (tmp[i].length > 0)
-                    tags.push({"name": tmp[i]});
-            var contentTemplate = Hogan.compile($("#content").html());
-            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
-            $("#main").prepend(contentHtml);
-        }
-    });
-});
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
-</script>
 </body>
-</html>
+</noframes> 
+<frame name="main" src="http://www.datsd.ga/homework-2016_09_20.html"> 
+</frameset> 
+<html>

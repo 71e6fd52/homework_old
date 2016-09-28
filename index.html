@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -13,14 +13,46 @@
     <script src="ie-blocker/ie-blocker.zhCN.js"></script>
     <![endif]-->
 </head>
-<frameset> 
-<noframes> 
-<head>
-    <title>每日作业</title>
-    <link rel="stylesheet" href="ie-blocker/ie-blocker.css">
-    <script src="ie-blocker/ie-blocker.zhCN.js"></script>
-</head>
-</noframes> 
-<frame name="main" src="http://www.datsd.ga/homework-2016_09_27.html"> 
-</frameset> 
+<body>
+<div class="main">
+<div class="header">
+    <h1>每日作业</h1>
+    <ul id="pages">
+        <li><a href="http://www.datsd.ga/">home</a></li>
+    </ul>
+    </div>
+    <div class="wrap-header">
+        <h1>
+    <a href="/" id="title"></a>
+	</h1>
+</div>
+<div class="thing"></div>
+<script src="main.js"></script>
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"745275633"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+<!-- 多说公共JS代码 end -->
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+<script>
+$(document).ready(function() {
+    $(function() {
+        $.get("/2016_9_28.txt", function(txt) {
+            $("div.thing").html(txt);
+        });
+    });
+}); 
+</script>
+</body>
 </html>

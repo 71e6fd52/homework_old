@@ -4,7 +4,7 @@
 
 <ol>
 <li>《初中新课标阅读文言文课外拓展训练》 2 篇。</li>
-<li><a Greg="http://www.holdhomework.com/thread.html?tid=360">《课时特训》《台阶》《信客》。</a></li>
+<li><a href="http://www.holdhomework.com/thread.html?tid=360">《课时特训》《台阶》《信客》。</a></li>
 <li>随笔。</li>
 <li>预习《背影》《台阶》。</li>
 </ol>

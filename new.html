@@ -58,6 +58,7 @@ $(document).ready(function() {
     $(function() {
         $.get("/2016_10_18_.txt", function(txt) {
             $("div.thing").html(txt);
+            $("div.thing").trigger( "create" );
         });
     });
 }); 

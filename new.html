@@ -7,11 +7,6 @@
     <meta name="Description" content="blog"/>
     <title>每日作业</title>
     <link rel="shortcut icon" href="/static/favicon.png"/>
-<script>
-    $(function() {
-	$( "div.thing" ).pagecontainer( "load" , "/2016_10_18_.txt" , { reload: true } );
-    });
-</script>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -58,15 +53,12 @@ var duoshuoQuery = {short_name:"745275633"};
 	})();
 </script>
 <!-- 多说公共JS代码 end -->
-<!--script-->
+<script>
 $(document).ready(function() {
-    $(function() {
-        $.get("/2016_10_18_.txt", function(txt) {
-            $("div.thing").html(txt);
-            $("div.thing").trigger( "create" );
-        });
+$(function() {
+	$( "div.thing" ).pagecontainer( "load" , "/2016_10_18_.txt" , { reload: true } );
     });
 }); 
-<!--/script-->
+</script>
 </body>
 </html>

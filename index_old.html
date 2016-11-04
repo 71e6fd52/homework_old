@@ -1,58 +1,29 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="Keywords" content="blog"/>
-    <meta name="Description" content="blog"/>
-    <title>每日作业</title>
-    <link rel="shortcut icon" href="/static/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="/main.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="Keywords" content="blog"/>
+	<meta name="Description" content="blog"/>
+	<title>每日作业</title>
+	<link rel="shortcut icon" href="/static/favicon.png"/>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/jquery-mobile/1.4.5/jquery.mobile.min.css">
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
     <!--[if lt IE 11]>
     <link rel="stylesheet" href="ie-blocker/ie-blocker.css">
     <script src="ie-blocker/ie-blocker.zhCN.js"></script>
     <![endif]-->
 </head>
-<body>
-<div class="main">
-<div class="header">
-    <h1>每日作业</h1>
-    <ul id="pages">
-        <li><a href="http://www.datsd.ga/">主页</a></li>
-        <li><a href="http://www.holdhomework.com/">答案</a></li>
-    </ul>
-</div>
-<div class="wrap-header">
-    <h1><a href="/" id="title">每日作业</a></h1>
-</div>
-<div class="thing">
-</div>
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="homework" data-title="每日作业" data-url="http://homework.datsd.ga/"></div>
-<!-- 多说评论框 end -->
-<h1><strong>消灭人类暴政！世界属于三体！<strong></h1>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
-<!-- 多说公共JS代码 start -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"745275633"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-</script>
-<!-- 多说公共JS代码 end -->
-<script>
-$(document).ready(function() {
-    $(function() {
-        $.get("/2016_10_18.txt", function(txt) {
-            $("div.thing").html(txt);
-        });
-    });
-}); 
-</script>
-</body>
+<frameset>
+	<noframes>
+		<body>
+			<link rel="stylesheet" href="ie-blocker/ie-blocker.css">
+			<script src="ie-blocker/ie-blocker.zhCN.js"></script>
+		</body>
+	</noframes>
+	
+	<frame src="/2016_11_03.html">
+</frameset>
 </html>
+
